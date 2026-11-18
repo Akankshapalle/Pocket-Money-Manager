@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+reports/*.csv
+reports/*.md
+charts/*.png
+data/transactions_corrupt_*.json

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "DEMO0001",
+    "date": "2026-07-01",
+    "type": "income",
+    "amount": 1500,
+    "category": "Allowance",
+    "note": "Monthly pocket money"
+  },
+  {
+    "id": "DEMO0002",
+    "date": "2026-07-04",
+    "type": "expense",
+    "amount": 130,
+    "category": "Food",
+    "note": "Lunch"
+  },
+  {
+    "id": "DEMO0003",
+    "date": "2026-07-07",
+    "type": "expense",
+    "amount": 80,
+    "category": "Travel",
+    "note": "Bus fare"
+  },
+  {
+    "id": "DEMO0004",
+    "date": "2026-07-10",
+    "type": "income",
+    "amount": 530,
+    "category": "Gift",
+    "note": "Birthday gift"
+  },
+  {
+    "id": "DEMO0005",
+    "date": "2026-07-13",
+    "type": "expense",
+    "amount": 250,
+    "category": "Education",
+    "note": "Notebooks"
+  },
+  {
+    "id": "DEMO0006",
+    "date": "2026-07-16",
+    "type": "expense",
+    "amount": 190,
+    "category": "Shopping",
+    "note": "Stationery"
+  },
+  {
+    "id": "DEMO0007",
+    "date": "2026-07-19",
+    "type": "expense",
+    "amount": 110,
+    "category": "Entertainment",
+    "note": "Movie snacks"
+  },
+  {
+    "id": "DEMO0008",
+    "date": "2026-07-22",
+    "type": "income",
+    "amount": 330,
+    "category": "Other",
+    "note": "Helped with a task"
+  },
+  {
+    "id": "DEMO0009",
+    "date": "2026-07-25",
+    "type": "expense",
+    "amount": 75,
+    "category": "Food",
+    "note": "Snacks"
+  },
+  {
+    "id": "DEMO0010",
+    "date": "2026-07-28",
+    "type": "expense",
+    "amount": 210,
+    "category": "Travel",
+    "note": "Auto fare"
+  },
+  {
+    "id": "DEMO0011",
+    "date": "2026-07-31",
+    "type": "income",
+    "amount": 1520,
+    "category": "Allowance",
+    "note": "Monthly pocket money"
+  },
+  {
+    "id": "DEMO0012",
+    "date": "2026-08-03",
+    "type": "expense",
+    "amount": 150,
+    "category": "Food",
+    "note": "Lunch"
+  },
+  {
+    "id": "DEMO0013",
+    "date": "2026-08-06",
+    "type": "expense",
+    "amount": 60,
+    "category": "Travel",
+    "note": "Bus fare"
+  },
+  {
+    "id": "DEMO0014",
+    "date": "2026-08-09",
+    "type": "income",
+    "amount": 510,
+    "category": "Gift",
+    "note": "Birthday gift"
+  },
+  {
+    "id": "DEMO0015",
+    "date": "2026-08-12",
+    "type": "expense",
+    "amount": 270,
+    "category": "Education",
+    "note": "Notebooks"
+  },
+  {
+    "id": "DEMO0016",
+    "date": "2026-08-15",
+    "type": "expense",
+    "amount": 210,
+    "category": "Shopping",
+    "note": "Stationery"
+  },
+  {
+    "id": "DEMO0017",
+    "date": "2026-08-18",
+    "type": "expense",
+    "amount": 90,
+    "category": "Entertainment",
+    "note": "Movie snacks"
+  },
+  {
+    "id": "DEMO0018",
+    "date": "2026-08-21",
+    "type": "income",
+    "amount": 310,
+    "category": "Other",
+    "note": "Helped with a task"
+  },
+  {
+    "id": "DEMO0019",
+    "date": "2026-08-24",
+    "type": "expense",
+    "amount": 95,
+    "category": "Food",
+    "note": "Snacks"
+  },
+  {
+    "id": "DEMO0020",
+    "date": "2026-08-27",
+    "type": "expense",
+    "amount": 230,
+    "category": "Travel",
+    "note": "Auto fare"
+  },
+  {
+    "id": "DEMO0021",
+    "date": "2026-08-30",
+    "type": "income",
+    "amount": 1500,
+    "category": "Allowance",
+    "note": "Monthly pocket money"
+  },
+  {
+    "id": "DEMO0022",
+    "date": "2026-09-02",
+    "type": "expense",
+    "amount": 130,
+    "category": "Food",
+    "note": "Lunch"
+  },
+  {
+    "id": "DEMO0023",
+    "date": "2026-09-05",
+    "type": "expense",
+    "amount": 80,
+    "category": "Travel",
+    "note": "Bus fare"
+  },
+  {
+    "id": "DEMO0024",
+    "date": "2026-09-08",
+    "type": "income",
+    "amount": 530,
+    "category": "Gift",
+    "note": "Birthday gift"
+  },
+  {
+    "id": "DEMO0025",
+    "date": "2026-09-11",
+    "type": "expense",
+    "amount": 250,
+    "category": "Education",
+    "note": "Notebooks"
+  },
+  {
+    "id": "DEMO0026",
+    "date": "2026-09-14",
+    "type": "expense",
+    "amount": 190,
+    "category": "Shopping",
+    "note": "Stationery"
+  },
+  {
+    "id": "DEMO0027",
+    "date": "2026-09-17",
+    "type": "expense",
+    "amount": 110,
+    "category": "Entertainment",
+    "note": "Movie snacks"
+  },
+  {
+    "id": "DEMO0028",
+    "date": "2026-09-20",
+    "type": "income",
+    "amount": 330,
+    "category": "Other",
+    "note": "Helped with a task"
+  },
+  {
+    "id": "DEMO0029",
+    "date": "2026-09-23",
+    "type": "expense",
+    "amount": 75,
+    "category": "Food",
+    "note": "Snacks"
+  },
+  {
+    "id": "DEMO0030",
+    "date": "2026-09-26",
+    "type": "expense",
+    "amount": 210,
+    "category": "Travel",
+    "note": "Auto fare"
+  },
+  {
+    "id": "DEMO0031",
+    "date": "2026-09-29",
+    "type": "income",
+    "amount": 1520,
+    "category": "Allowance",
+    "note": "Monthly pocket money"
+  },
+  {
+    "id": "DEMO0032",
+    "date": "2026-10-02",
+    "type": "expense",
+    "amount": 150,
+    "category": "Food",
+    "note": "Lunch"
+  },
+  {
+    "id": "DEMO0033",
+    "date": "2026-10-05",
+    "type": "expense",
+    "amount": 60,
+    "category": "Travel",
+    "note": "Bus fare"
+  },
+  {
+    "id": "DEMO0034",
+    "date": "2026-10-08",
+    "type": "income",
+    "amount": 510,
+    "category": "Gift",
+    "note": "Birthday gift"
+  },
+  {
+    "id": "DEMO0035",
+    "date": "2026-10-11",
+    "type": "expense",
+    "amount": 270,
+    "category": "Education",
+    "note": "Notebooks"
+  },
+  {
+    "id": "DEMO0036",
+    "date": "2026-10-14",
+    "type": "expense",
+    "amount": 210,
+    "category": "Shopping",
+    "note": "Stationery"
+  },
+  {
+    "id": "DEMO0037",
+    "date": "2026-10-17",
+    "type": "expense",
+    "amount": 90,
+    "category": "Entertainment",
+    "note": "Movie snacks"
+  },
+  {
+    "id": "DEMO0038",
+    "date": "2026-10-20",
+    "type": "income",
+    "amount": 310,
+    "category": "Other",
+    "note": "Helped with a task"
+  },
+  {
+    "id": "DEMO0039",
+    "date": "2026-10-23",
+    "type": "expense",
+    "amount": 95,
+    "category": "Food",
+    "note": "Snacks"
+  },
+  {
+    "id": "DEMO0040",
+    "date": "2026-10-26",
+    "type": "expense",
+    "amount": 230,
+    "category": "Travel",
+    "note": "Auto fare"
+  }
+]
