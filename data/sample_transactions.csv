@@ -1,0 +1,42 @@
+date,type,category,amount,note
+2026-09-01,income,Allowance,3000.00,Monthly allowance from parents
+2026-09-03,expense,Entertainment,221.62,Movie/games
+2026-09-04,expense,Stationery,34.55,Notebooks/pens
+2026-09-09,expense,Recharge,211.30,Mobile recharge
+2026-09-14,income,Gift,500.00,Birthday money
+2026-09-15,expense,Recharge,256.88,Mobile recharge
+2026-09-21,expense,Food,143.65,Canteen
+2026-10-01,income,Allowance,3000.00,Monthly allowance from parents
+2026-10-03,expense,Stationery,83.39,Notebooks/pens
+2026-10-03,expense,Snacks,15.12,Evening snacks
+2026-10-04,expense,Food,71.26,Canteen
+2026-10-05,expense,Transport,51.68,Bus/metro
+2026-10-05,expense,Recharge,256.14,Mobile recharge
+2026-10-06,expense,Snacks,18.25,Evening snacks
+2026-10-06,expense,Food,79.29,Canteen
+2026-10-09,income,Part-time Work,1200.00,Weekend tutoring
+2026-10-16,expense,Stationery,204.84,Notebooks/pens
+2026-10-17,expense,Recharge,217.12,Mobile recharge
+2026-10-18,expense,Snacks,56.96,Evening snacks
+2026-10-19,expense,Transport,48.26,Bus/metro
+2026-10-20,expense,Entertainment,2500.00,Edge case: unusually large (anomaly)
+2026-10-21,expense,Recharge,238.38,Mobile recharge
+2026-10-22,expense,Food,172.15,Canteen
+2026-10-28,expense,Food,82.42,Canteen
+2026-10-31,expense,Stationery,107.61,Notebooks/pens
+2026-11-01,income,Allowance,3000.00,Monthly allowance from parents
+2026-11-01,expense,Entertainment,440.82,Movie/games
+2026-11-02,expense,Food,111.93,Canteen
+2026-11-02,expense,Transport,75.88,Bus/metro
+2026-11-02,expense,Stationery,123.06,Notebooks/pens
+2026-11-06,expense,Stationery,50.18,Notebooks/pens
+2026-11-07,expense,Recharge,293.04,Mobile recharge
+2026-11-07,expense,Food,122.03,Canteen
+2026-11-08,income,Gift,0.01,Boundary: smallest amount
+2026-11-08,expense,Transport,47.07,Bus/metro
+2026-11-12,expense,Food,60.06,Canteen
+2026-11-16,expense,Entertainment,389.34,Movie/games
+2026-11-17,expense,Entertainment,133.04,Movie/games
+2026-11-18,expense,Food,138.36,Canteen
+2026-11-18,expense,Entertainment,428.66,Movie/games
+2026-11-20,expense,Snacks,0.01,Edge case: smallest expense

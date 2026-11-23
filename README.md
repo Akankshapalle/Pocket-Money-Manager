@@ -1,115 +1,50 @@
 # Pocket Money Manager
 
-A beginner-friendly Python terminal application for recording pocket money received and spent.
+A menu-driven Python terminal app to log pocket money **received** and **spent**, check balances,
+search records, see summaries and warnings, draw Matplotlib charts, and export reports.
+Built for the DataSpark Challenge (Project #14). Needs Python 3.10+.
+
+## Run it
+```
+pip install -r requirements.txt     # only needed for charts
+python main.py --demo               # first run: loads 41 sample entries
+python main.py                      # normal use (data kept in data/pocket_money.json)
+python -m unittest discover -s tests   # run the 39 automated tests
+```
+Options: `--data FILE` (use another JSON file), `--reports FOLDER` (where exports/charts go).
 
 ## Features
-
-- Menu-driven terminal interface
-- Add income and expenses with validation
-- Automatic balance calculation
-- JSON local storage (records survive restart)
-- Search by keyword, category, type, date, or note
-- Summary: totals, balance, average expense, category totals
-- Monthly spending budget with 80% and 100% warning messages
-- CSV and Markdown report export
-- CSV bulk import with row-by-row validation feedback
-- Matplotlib charts: monthly trend and expense categories
-- Safe handling of missing/corrupted JSON files
-
-## Requirements
-
-- Python 3.10 or newer
-- Matplotlib is optional (only needed for charts)
-
-## Run in VS Code
-
-1. Extract `Pocket_Money_Manager.zip`.
-2. Open VS Code.
-3. Select **File → Open Folder** and choose the `Pocket_Money_Manager` folder.
-4. Open **Terminal → New Terminal**.
-5. (Optional but recommended) Create a virtual environment:
-
-   Windows:
-   ```powershell
-   py -m venv .venv
-   .venv\Scripts\activate
-   ```
-
-   macOS/Linux:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-
-6. Install chart support:
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-   If you do not need charts, you can skip this step.
-7. Run:
-   ```bash
-   python main.py
-   ```
-   On some Windows systems, use `py main.py`.
-
-## Menu
-
-| Option | Action |
+| Requirement | Where |
 |---|---|
-| 1 | Add money received |
-| 2 | Add money spent |
-| 3 | View all records |
-| 4 | Search records |
-| 5 | View summary |
-| 6 | Generate charts |
-| 7 | Export CSV and Markdown reports |
-| 8 | Import a CSV file |
-| 9 | Set monthly spending budget |
-| 0 | Save and exit |
+| Menu-driven terminal UI, ANSI colour, paged tables | `cli.py`, `formatting.py` |
+| Defensive validation (amount, date, type, category, note) | `validation.py` |
+| Log received/spent, balances, budgets | `ledger.py` |
+| JSON persistence, atomic saves, corrupted-file recovery | `storage.py` |
+| Search by keyword, category, type, date range | `Ledger.search` (category index) |
+| Executive summary: totals, averages, savings rate, trend, month-end forecast, status | `reports.py` |
+| Matplotlib charts (monthly bars, category pie, balance trend) | `charts.py` |
+| Export CSV / Markdown / text audit log | `exporters.py` |
+| Warnings: budget limits, low balance, unusual expenses | `Ledger.alerts` |
+| Bulk CSV import with row-by-row error log | `importer.py` |
+| Monthly recurring allowance/bills (catch-up, no duplicates) | `Ledger.apply_recurring` |
 
-## Project structure
+## Design notes
+- **Modular layers**: models -> validation -> ledger (logic) -> storage / reports / exporters / charts / importer -> cli.
+  Logic has no `print` or `input`, so it is fully unit-testable.
+- **Decimal money**: no floating-point drift (0.10 x 10 is exactly 1.00).
+- **Indexes**: the ledger keeps category and month indexes, so filtered searches and monthly totals avoid full scans; lists are paginated.
+- **Safe saves**: data is written to a temp file, then swapped in with `os.replace`, so a crash cannot corrupt the file.
+  An unreadable file is renamed `*.corrupt-<time>.json` and the app starts clean instead of crashing.
+- **Security**: strict input limits, control characters stripped, CSV formula-injection guard on export, import size/row caps.
+- **Anomaly rule**: an expense above 2.5x its category median (needs 5+ entries) is flagged.
 
-```text
-Pocket_Money_Manager/
-├── main.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── data/
-│   ├── transactions.json
-│   └── settings.json
-├── sample_data/
-│   └── sample_transactions.csv
-├── reports/
-└── charts/
-```
+## Demo script (about 3 minutes)
+1. `python main.py --demo`, point out the banner and warnings.
+2. Option 1: type a bad type (`x`), a bad date (`31-02-2026`), a bad amount (`abc`, `-4`) and show each is rejected, then enter valid values.
+3. Option 4: summary tables. Option 5: charts saved in `reports/charts/`.
+4. Option 8: import `data/legacy_with_errors.csv`, show the row-by-row error log.
+5. Option 7: exports. Exit, relaunch `python main.py` and show the data is still there.
 
-- `data/transactions.json` is the app's live database.
-- `sample_data/sample_transactions.csv` contains 40 demo rows. Use menu option 8 to import it.
-- Reports and charts are created in their respective folders.
-
-## Demo flow for your hackathon
-
-1. Start the app with `python main.py`.
-2. Choose option 1 and add income.
-3. Choose option 2 and try invalid values such as blank text or `abc`; the app asks again instead of crashing.
-4. Choose option 5 to show the balance and summary.
-5. Choose option 6 to create charts (requires Matplotlib).
-6. Choose option 7 to export reports.
-7. Exit with option 0 and run the app again to demonstrate saved data.
-
-## Data format
-
-Each transaction has:
-- `id`: unique record identifier
-- `date`: date in `YYYY-MM-DD` format
-- `type`: `income` or `expense`
-- `amount`: positive numeric amount in INR
-- `category`: transaction category
-- `note`: optional description
-
-## Notes
-
-- The app works offline and does not require an API key or internet connection.
-- The default monthly spending budget is ₹3,000; change it using menu option 9.
-- Keep a backup of the `data` folder if you want to preserve your records.
+## Sample data (`data/`)
+`sample_transactions.csv` / `.json` (41 entries incl. boundary 0.01 and an outlier), `legacy_with_errors.csv` (9 rows, 7 deliberately bad).
+Regenerate with `python scripts/make_sample_data.py`.

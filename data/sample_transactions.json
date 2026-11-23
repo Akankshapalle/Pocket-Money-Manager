@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "settings": {
+    "budgets": {
+      "Entertainment": "1000.00"
+    },
+    "low_balance_threshold": "100.00",
+    "recurring": []
+  },
+  "transactions": [
+    {
+      "id": 1,
+      "date": "2026-09-01",
+      "kind": "income",
+      "category": "Allowance",
+      "amount": "3000.00",
+      "note": "Monthly allowance from parents"
+    },
+    {
+      "id": 2,
+      "date": "2026-09-03",
+      "kind": "expense",
+      "category": "Entertainment",
+      "amount": "221.62",
+      "note": "Movie/games"
+    },
+    {
+      "id": 3,
+      "date": "2026-09-04",
+      "kind": "expense",
+      "category": "Stationery",
+      "amount": "34.55",
+      "note": "Notebooks/pens"
+    },
+    {
+      "id": 4,
+      "date": "2026-09-09",
+      "kind": "expense",
+      "category": "Recharge",
+      "amount": "211.30",
+      "note": "Mobile recharge"
+    },
+    {
+      "id": 5,
+      "date": "2026-09-14",
+      "kind": "income",
+      "category": "Gift",
+      "amount": "500.00",
+      "note": "Birthday money"
+    },
+    {
+      "id": 6,
+      "date": "2026-09-15",
+      "kind": "expense",
+      "category": "Recharge",
+      "amount": "256.88",
+      "note": "Mobile recharge"
+    },
+    {
+      "id": 7,
+      "date": "2026-09-21",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "143.65",
+      "note": "Canteen"
+    },
+    {
+      "id": 8,
+      "date": "2026-10-01",
+      "kind": "income",
+      "category": "Allowance",
+      "amount": "3000.00",
+      "note": "Monthly allowance from parents"
+    },
+    {
+      "id": 9,
+      "date": "2026-10-03",
+      "kind": "expense",
+      "category": "Stationery",
+      "amount": "83.39",
+      "note": "Notebooks/pens"
+    },
+    {
+      "id": 10,
+      "date": "2026-10-03",
+      "kind": "expense",
+      "category": "Snacks",
+      "amount": "15.12",
+      "note": "Evening snacks"
+    },
+    {
+      "id": 11,
+      "date": "2026-10-04",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "71.26",
+      "note": "Canteen"
+    },
+    {
+      "id": 12,
+      "date": "2026-10-05",
+      "kind": "expense",
+      "category": "Transport",
+      "amount": "51.68",
+      "note": "Bus/metro"
+    },
+    {
+      "id": 13,
+      "date": "2026-10-05",
+      "kind": "expense",
+      "category": "Recharge",
+      "amount": "256.14",
+      "note": "Mobile recharge"
+    },
+    {
+      "id": 14,
+      "date": "2026-10-06",
+      "kind": "expense",
+      "category": "Snacks",
+      "amount": "18.25",
+      "note": "Evening snacks"
+    },
+    {
+      "id": 15,
+      "date": "2026-10-06",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "79.29",
+      "note": "Canteen"
+    },
+    {
+      "id": 16,
+      "date": "2026-10-09",
+      "kind": "income",
+      "category": "Part-Time Work",
+      "amount": "1200.00",
+      "note": "Weekend tutoring"
+    },
+    {
+      "id": 17,
+      "date": "2026-10-16",
+      "kind": "expense",
+      "category": "Stationery",
+      "amount": "204.84",
+      "note": "Notebooks/pens"
+    },
+    {
+      "id": 18,
+      "date": "2026-10-17",
+      "kind": "expense",
+      "category": "Recharge",
+      "amount": "217.12",
+      "note": "Mobile recharge"
+    },
+    {
+      "id": 19,
+      "date": "2026-10-18",
+      "kind": "expense",
+      "category": "Snacks",
+      "amount": "56.96",
+      "note": "Evening snacks"
+    },
+    {
+      "id": 20,
+      "date": "2026-10-19",
+      "kind": "expense",
+      "category": "Transport",
+      "amount": "48.26",
+      "note": "Bus/metro"
+    },
+    {
+      "id": 21,
+      "date": "2026-10-20",
+      "kind": "expense",
+      "category": "Entertainment",
+      "amount": "2500.00",
+      "note": "Edge case: unusually large (anomaly)"
+    },
+    {
+      "id": 22,
+      "date": "2026-10-21",
+      "kind": "expense",
+      "category": "Recharge",
+      "amount": "238.38",
+      "note": "Mobile recharge"
+    },
+    {
+      "id": 23,
+      "date": "2026-10-22",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "172.15",
+      "note": "Canteen"
+    },
+    {
+      "id": 24,
+      "date": "2026-10-28",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "82.42",
+      "note": "Canteen"
+    },
+    {
+      "id": 25,
+      "date": "2026-10-31",
+      "kind": "expense",
+      "category": "Stationery",
+      "amount": "107.61",
+      "note": "Notebooks/pens"
+    },
+    {
+      "id": 26,
+      "date": "2026-11-01",
+      "kind": "income",
+      "category": "Allowance",
+      "amount": "3000.00",
+      "note": "Monthly allowance from parents"
+    },
+    {
+      "id": 27,
+      "date": "2026-11-01",
+      "kind": "expense",
+      "category": "Entertainment",
+      "amount": "440.82",
+      "note": "Movie/games"
+    },
+    {
+      "id": 28,
+      "date": "2026-11-02",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "111.93",
+      "note": "Canteen"
+    },
+    {
+      "id": 29,
+      "date": "2026-11-02",
+      "kind": "expense",
+      "category": "Transport",
+      "amount": "75.88",
+      "note": "Bus/metro"
+    },
+    {
+      "id": 30,
+      "date": "2026-11-02",
+      "kind": "expense",
+      "category": "Stationery",
+      "amount": "123.06",
+      "note": "Notebooks/pens"
+    },
+    {
+      "id": 31,
+      "date": "2026-11-06",
+      "kind": "expense",
+      "category": "Stationery",
+      "amount": "50.18",
+      "note": "Notebooks/pens"
+    },
+    {
+      "id": 32,
+      "date": "2026-11-07",
+      "kind": "expense",
+      "category": "Recharge",
+      "amount": "293.04",
+      "note": "Mobile recharge"
+    },
+    {
+      "id": 33,
+      "date": "2026-11-07",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "122.03",
+      "note": "Canteen"
+    },
+    {
+      "id": 34,
+      "date": "2026-11-08",
+      "kind": "income",
+      "category": "Gift",
+      "amount": "0.01",
+      "note": "Boundary: smallest amount"
+    },
+    {
+      "id": 35,
+      "date": "2026-11-08",
+      "kind": "expense",
+      "category": "Transport",
+      "amount": "47.07",
+      "note": "Bus/metro"
+    },
+    {
+      "id": 36,
+      "date": "2026-11-12",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "60.06",
+      "note": "Canteen"
+    },
+    {
+      "id": 37,
+      "date": "2026-11-16",
+      "kind": "expense",
+      "category": "Entertainment",
+      "amount": "389.34",
+      "note": "Movie/games"
+    },
+    {
+      "id": 38,
+      "date": "2026-11-17",
+      "kind": "expense",
+      "category": "Entertainment",
+      "amount": "133.04",
+      "note": "Movie/games"
+    },
+    {
+      "id": 39,
+      "date": "2026-11-18",
+      "kind": "expense",
+      "category": "Food",
+      "amount": "138.36",
+      "note": "Canteen"
+    },
+    {
+      "id": 40,
+      "date": "2026-11-18",
+      "kind": "expense",
+      "category": "Entertainment",
+      "amount": "428.66",
+      "note": "Movie/games"
+    },
+    {
+      "id": 41,
+      "date": "2026-11-20",
+      "kind": "expense",
+      "category": "Snacks",
+      "amount": "0.01",
+      "note": "Edge case: smallest expense"
+    }
+  ]
+}
